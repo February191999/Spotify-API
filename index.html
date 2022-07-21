@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Music Project</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!--Start of Container For Movie Posters-->
+    <div class="container">
+        <div class="gallery"> <!--TODO Add onclick event listener for figures-->
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getSong(this.id, event)" >
+                <img class="gallery__img" src="images/lou_reed.jpg" alt="Walk On The Wild Side Lou Reed">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/the_cure.jpg" alt="Just Like Heaven The Cure">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/the_smiths.jpg" alt="Half A Person The Smiths">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/the_strokes.jpg" alt="Bad Decisions The Strokes">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/joy_division.jpg" alt="Love Will Tear Us Apart">
+            </figure>
+
+        </div>
+        <div class="buttoncontain">
+            <button onclick="stopSnippet()" >Stop Song</button> <!--TODO Add onclick event listener-->
+        </div>
+    </div>
+    
+</body>
+</html>
